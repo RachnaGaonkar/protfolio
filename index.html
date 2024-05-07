@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>person portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/296b9e203d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <div id="header">
+        <div class ="container">
+            <nav>
+                <img src="images/logo.png" class="logo"  >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Engineering Student</p>
+                <h1>Hi, I'm <span>Rachna Gaonkar</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-----about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Ginza is a modern and minimalist about-page example of a restaurant. Two images showcase the location and one features the master chef in action.
+
+                        Also, the title font is large, but the paragraph font is small. Still, the use of white space makes it pleasant to skim through.
+                        
+                        You’ll also find a call-to-action (CTA) button for table reservations that opens on a new page.
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>web development</span><br>web app development</li>
+                                <li><span>blender</span><br>3d model designing</li>    
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>none</span><br></li>
+                                <li><span></span><br></li>    
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>diploma in computer enginerring from polytechnic curchorem</li>
+                                <li><span></span><br></li>    
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--------services--------->
+      <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design </h2>
+                    <p>Ginza is a modern and minimalist about-page example of a restaurant. Two images showcase the location and one features the master chef in action. Also, the title font is large</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design </h2>
+                    <p>Ginza is a modern and minimalist about-page example of a restaurant. Two images showcase the location and one features the master chef in action. Also, the title font is large</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h2>blender modeling</h2>
+                    <p>Ginza is a modern and minimalist about-page example of a restaurant. Two images showcase the location and one features the master chef in action. Also, the title font is large</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--------portfolio--------->
+      <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">portfolio</h1>
+                <h2 class="blender-title">my blender models</h2>
+                <div class="work-list">
+                   <div class="work">
+                        <img src="images/work1.png" />
+                    </div>
+                    <div class="work">
+                        <img src="images/work2.png" />
+                    </div>
+                    <div class="work">
+                        <img src="images/work3.png" />
+                    </div>
+                    <div class="work">
+                        <img src="images/work4.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--------contact--------->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i>rachanagaonkar5@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>9420195447</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/rachna_27_05"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-discord"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-reddit-alien"></i></a>
+                        </div>
+                        <div class="button"><a href="images/StudentResume.pdf" download class="btn btn2">Download CV</a></div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="your name" required>
+                            <input type="email" name="email" placeholder="your email" required>
+                            <textarea name="message" rows="6" placeholder="your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                            
+                        </form>
+                        <div id="msg"></div>
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+       <!--------footer--------->
+         <div class="copyright">
+            <p>copyright © RACHNA. </p>
+         </div>
+    <script src="script.js"></script>
+   
+</body>
+</html>
