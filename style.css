@@ -17,18 +17,25 @@ body{
     background-image: url(images/bg.png);
     background-size:cover;
     background-position: center;
+    z-index: 10;  /* Ensure header has higher z-index */
 }
 .container{
     padding:10px 5%;
 }
 nav{
-    position:sticky;
-    top:0;
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content:space-between;
+    flex-wrap:wrap; 
+    z-index: 1000; /* Ensure nav has higher z-index */    
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 1280px;
+    background: #1e2224;
+  }
 .logo{
    width: 290px;
   }
