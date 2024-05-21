@@ -16,11 +16,12 @@ var tablinks = document.getElementsByClassName("tab-links");
 //onclick function  openmenu bar and closemenu bar
 var sidemenu =document.getElementById("sidemenu");
 
-function openmenu(){
-    sidemenu.style.right ="0";
+function openmenu() {
+    document.getElementById("sidemenu").style.right = "0";
 }
-function closemenu(){
-    sidemenu.style.right ="-150px";
+
+function closemenu() {
+    document.getElementById("sidemenu").style.right = "-150px";
 }
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbytJcP_ZVyXXOPTluYfWDpUtCaRZPeJzRRE-nFAPOL_cn2ZwINHWHeyCTV4CMTGLN95/exec'
